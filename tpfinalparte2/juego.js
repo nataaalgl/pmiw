@@ -23,7 +23,7 @@ class Juego {
     // arañas 
     this.enemigos.push(new Enemigo(80, 275, "arana", 2.8, -1));
     this.enemigos.push(new Enemigo(420, 275, "arana", 2.8, -1));
-    
+  
     // cocodrilos
     this.enemigos.push(new Enemigo(0, 110, "cocodrilo", 1.7, 1));
     this.enemigos.push(new Enemigo(300, 110, "cocodrilo", 1.7, 1));
@@ -84,17 +84,15 @@ class Juego {
     }
   }
 
-  mostrarInicio() {
+ mostrarInicio() {
     fill(0, 180);
     rect(0, 0, width, height);
     fill(255);
     textAlign(CENTER, CENTER);
     textSize(28);
-    text("INDIANA JONES - EL JUEGO", width/2, 140);
+    text("Juego de tp final sobre indiana jones", width/2, 140);
     textSize(16);
-    text("Usá las flechas para mover a Jones", width/2, 200);
-    text("Evitá los peligros y llegá al tesoro", width/2, 230);
-    text("tocar ENTER para empezar", width/2, 280);
+    text("toca enter y empieza", width/2, 280);
   }
 
   mostrarGanado() {
